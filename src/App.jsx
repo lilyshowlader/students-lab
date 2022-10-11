@@ -64,12 +64,13 @@ function App(props) {
   }
 ]
   return (
-    <>
-    {students.map(student =>
-      <Student  key={student.name} student={student}/>
+    <div>
+      <h1>Student List</h1>
+    {students.map((student, index) =>
+      <Student  key={index} student={student}/>
 
     )}
-    </>
+    </div>
   )
 }
 
